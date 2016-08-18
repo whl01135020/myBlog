@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>留言</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link type="text/css" href="css/base.css" rel="stylesheet">
+<link type="text/css" href="css/index.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/about1111.css">
+<link type="text/css" rel="stylesheet" href="css/留言.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sliders.js"></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<!-- 返回顶部调用 begin -->
+<!--<script type="text/javascript" src="js/up/jquery.js"></script>-->
+<script type="text/javascript" src="js/up.js"></script>
+<script type="text/javascript" src="js/move2.js"></script>
+<!-- 返回顶部调用 end-->
+<!--header start-->
+<header>
+ <div class="logo f_l"><b><a href="/"><img src="images/e602d4cb78ca968db4ab3739c9b25c2f_top.gif" width="190px"; ></a></div>
+  
+  <nav id="topnav" class="f_r">
+<!--导航条 start-->
+    <ul>
+      <a href="小丽1.html" target="_blank">首页</a> <a href="about111.html" target="_blank">关于我</a> <a href="web.html" target="_blank">Web前端</a> <a href="相册.html" target="_blank">相册</a> <a href="留言.html" target="_blank">留言</a>
+    </ul>
+    <script src="js/nav.js"></script> 
+  </nav><!--导航条 end-->
+</header>
+<!--header end-->
+<!--article start-->
+<article>
+<div class="labout">
+<p class="about_tit"><a href="#">首页</a>&nbsp;&nbsp;<b>&gt;&gt;</b>&nbsp;&nbsp;<a href="#">给我留言Massages</a><span>给我留言</span></p>
+<!--<div class="des">
+		<!--<p class="about_tit"><a href="#">首页</a>&nbsp;&nbsp;<b>&gt;&gt;</b>&nbsp;&nbsp;<a href="#">给我留言Massages</a><span>给我留言</span></p>-->
+				<!--<div class="ds-thread" data-thread-key="www.bulang123.cn" data-title="seo" data-url="www.bulang123.cn"></div>-->
+			<!-- 多说评论框 end -->
+			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+			<!--<script type="text/javascript">
+			var duoshuoQuery = {short_name:"bulang123"};
+				(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0] 
+					 || document.getElementsByTagName('body')[0]).appendChild(ds);
+				})();
+			</script>
+	</div>-->
+				<!--<div class="ds-thread" data-thread-key="www.bulang123.cn" data-title="seo" data-url="www.bulang123.cn"></div>
+			<!-- 多说评论框 end -->
+			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+			<!--<script type="text/javascript">
+			var duoshuoQuery = {short_name:"bulang123"};
+				(function() {
+					var ds = document.createElement('script');
+					ds.type = 'text/javascript';ds.async = true;
+					ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+					ds.charset = 'UTF-8';
+					(document.getElementsByTagName('head')[0] 
+					 || document.getElementsByTagName('body')[0]).appendChild(ds);
+				})();
+			</script>-->
+            <script>
+			window.onload=function(){
+				var oTxt=document.getElementById('text1');
+				var oBtn=document.getElementById('btn1');
+				var oUl=document.getElementById('ul1');
+				
+				oBtn.onclick=function(){
+					var oLi=document.createElement('li');//创建li 
+					oLi.innerHTML=oTxt.value;//li里面的值就是文本框里面的值
+					oTxt.value='';//文本框清空，方便下一次使用
+					if(oUl.children. length>0){
+						oUl.insertBefore(oLi,oUl.children[0]);//将li插到ul的第0个子节点前
+					}
+					else{
+						oUl.appendChild(oLi);//将li扔到ul里面
+					}
+					//运动
+					var iHeight=oLi.offsetHeight;//因为li的高度不确定，offsetHeight最大的好处就是自适应取出里面的东西，即高度完全是根据里面的内容有多高撑起来的
+		
+		           oLi.style.height='0';//取到高度之后将高度清零
+		           //高度变高同时透明度变大
+		           startMove(oLi, {height: iHeight}, function (){
+			       startMove(oLi, {opacity: 100});
+		          });
+
+				
+				}
+		};
+			
+            </script>
+            
+         <textarea id="text1" rows="5" cols="50" ></textarea>
+         <input id="btn1" type="button" value="留言" >
+         <ul id="ul1"></ul>
+</div>
+
+  <div class="r_box f_r">
+    <div class="tit01">
+    <img src="images/1.jpeg" width="200px" alt=""/>
+     <!-- <h3>关注我</h3>-->
+      <div class="gzwm">
+        <ul>
+          <li><a class="xlwb" href="#" target="_blank">新浪微博</a></li>
+          <li><a class="txwb" href="#" target="_blank">腾讯微博</a></li>
+          <li><a class="rss" href="portal.php?mod=rss" target="_blank">RSS</a></li>
+          <li><a class="wx" href="mailto:admin@admin.com">邮箱</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--tit01 end-->
+   <div class="search">
+			<input type="text" placeholder="请输入关键词" autofocus/>
+			<a href="#">搜索</a>
+		</div>
+		<div class="lit_nav">
+			<div class="borD"><a href="#">MVC</a></div>
+			<div class="borD"><a href="#">jquery</a></div>
+			<div class="borD"><a href="#">javaScript</a></div>
+			<div class="borD"><a href="#">HTML5</a></div>
+            <div class="borD"><a href="#">CSS3</a></div>
+            <div class="borD"><a href="#">GitHup</a></div>
+			<div style="clear:both;"></div>
+		</div>
+
+    <div class="moreSelect" id="lp_right_select"> 
+ 
+
+     
+      <!--ms-main end --> 
+    <!--切换卡 moreSelect end -->
+    
+    <div class="cloud">
+      <h3>标签云</h3>
+      <ul>
+        <li><a href="/">个人博客</a></li>
+        <li><a href="/">web开发</a></li>
+        <li><a href="/">前端设计</a></li>
+        <li><a href="/">Html</a></li>
+        <li><a href="/">div+css</a></li>
+        <li><a href="/">Html5</a></li>
+         <li><a href="/">CSS3</a></li>
+        <li><a href="/">百度</a></li>
+        <li><a href="/">Javasript</a></li>
+        <li><a href="/">吉他</a></li>
+        <li><a href="/">摄影</a></li>
+      </ul>
+    </div>
+    <div class="tuwen">
+      <h3>微信关注我</h3>
+      <img src="images/微信.jpg" width="300px" alt=""/>
+     
+    </div>
+    <!--<div class="ad"> <img src="images/03.jpg"> </div>-->
+    <div class="links">
+      <h3>友情链接</h3>
+      <ul>
+        <li><a href="/">杨青个人博客</a></li>
+        <li><a href="/">web开发</a></li>
+        <li><a href="/">前端设计</a></li>
+        <li><a href="/">Html</a></li>
+        <li><a href="/">CSS3</a></li>
+        <li><a href="/">Html5+css3</a></li>
+        <li><a href="/">百度</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--r_box end --> 
+</article>
+<!--article end-->
+
+<!--footer start-->
+<footer style="background:url(images/ex01.jpg) background-size:100% 100%;border-top: 4px solid #000;">
+  <p class="ft-copyright">王小丽博客 Design by DanceSmile 蜀ICP备11002373号-1</p>
+  <div id="tbox"><a id="gotop"  href="javascript:;"></a> </div>
+</footer>
+<!--footer end-->
+ <footer style="background:url(images/ex01.jpg);background-size:100% 100%;border-top: 4px solid #666">
+            <style type="text/css">
+                #cnzz_stat_icon_1259160276 {
+                    width: 50px;
+                }
+                footer p,footer span,footer a {
+                    color:#666;
+                }
+            </style>
+	<div style="height:5px">&nbsp;</div>
+            <p><a href="http://www.miitbeian.gov.cn" target="_blank">王小丽博客 Design by DanceSmile 蜀ICP备11002373号-1</a></p>
+		<span>申明：本站部分内容来源于互联网，如有侵犯你的权益请与我联系我将尽快清除。</span><br/>
+		<span class="yi-footer-fgrey">电子邮箱：</span>
+		<a href="mailto:1340963358@qq.com">1340963358@qq.com</a> | 
+		<a href="tencent://message/?uin=1340963358&Site=&Menu=yes">点击与我进行QQ聊天</a><br/>
+            	<span>本站使用编程语言：C# | 
+               本站使用技术：ASP.NET、Ajax、Jquery、Div+Css、Sqlserver 等
+                </span><br/>
+		<span style="margin-left: 49%; float: left;"></span>
+		<span>&nbsp;</span>
+            <div style="height:5px">&nbsp;</div>
+        </footer>-->
+
+</body>
+</html>
