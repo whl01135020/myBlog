@@ -27,7 +27,7 @@ a:hover { text-decoration: none; }
 .l_box { width: 670px; }
 .r_box { width: 300px; }
 /* 头部信息 */
-header { width: 1000px; height:160px;margin: 10px auto; overflow: hidden; clear: both; background:url(../img/4.jpg) ; }
+header { width: 1000px; height:160px;margin: 10px auto; overflow: hidden; clear: both;background:url(../images/4.jpg); }
 #topnav { width: 60%; background:#0FF; height: 46px; line-height: 46px; text-align: center;margin-top:120px;float:right; }
 #topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
 #topnav a:hover { background: #fff; color: #000; }
