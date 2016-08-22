@@ -1,18 +1,15 @@
-@charset"utf-8";
+
+ @charset"utf-8";
 .labout{width:680px;height:800px;float:left;margin-top:20px;border-right:1px dashed  #ABADB3;}
- .article_con{float:left;width:680px;padding-top:25px;}
- .article_con h2{font-size:22px;margin:15px 0;text-align:center;color:#c91b46;font-weight:bold;display:block;font-family:"宋体";}
- .article_con p.writer{line-height:35px;font-size:14px;color:#999;text-align:center;border-top:1px dashed #ABADB3;border-bottom:1px dashed #ABADB3;}
-.article_con p.writer a{color:#c91b46;}
-.article_con p.writer i{display:inline-block;width:50px;}
-.article_con p.article_all{font-size:14px;line-height:25px;text-indent:2em;padding:25px 5px;}
-.article_con p.article_two_tit{font-size:14px;line-height:25px;margin-bottom:50px;float:left;margin-right:350px;}
-.article_con p.article_two_tit a{color:#404040;}
-.article_con p.article_two_tit a:hover{color:#6fb5ee;}
-.article_con .article_all{ width:680px; height:700px;margin-top:10px;}
- .article_all p{font-size:16px; line-height:30px; text-indent:20px; font-family:"宋体"; margin-left:10px;}
- .article_all h1{ font-family:"微软雅黑" ;font-size:24px; text-align:center; font-weight:bold;}
- .LD{float:right;}
- .LD-img{float:left;margin-right:15px; margin-bottom:5px;}
- .LD-img img{width:350px;height:200px;}
- .LD-img span{ margin-left:100px; font-size:14px; color:#F00;}
+.labout p.about_tit{line-height:35px;border-bottom:1px solid #c0c0c0;text-align:right;padding-right:25px;width:580px;}
+.labout p.about_tit span{float:left;font-size:18px;color:#404040;margin-left:15px;}
+.labout p.about_tit a{color:#b5b5b5;font-size:14px;}
+.labout p.about_tit a:hover{color:#000;text-decoration:underline;}
+.labout p.about_tit b{color:#b5b5b5;}
+.labout section.about_con{float:right;margin-top:5px;padding:5px;width:630px;}
+.labout section.about_con .tit_pic{float:left;width:280px;text-align:left;margin-left:20px;margin-right:0px;}
+.labout section.about_con figure{font-size:14px;line-height:25px;letter-spacing:1px;}
+.labout section.about_con figure span{font-size:22px;color:#c91b46;text-indent:20px;display:block;padding-bottom:20px;}
+.labout section.about_con figure p{text-indent:2em;padding-right:15px;padding-top:15px;font-weight:bold;}
+.labout section.about_con figure p strong{color:#c91b46;}
+.labout section.about_con figure .read_me{padding:10px 25px 0;width:300px;margin:50px auto;border:1px solid #ABADB3;border-radius:5px;}
