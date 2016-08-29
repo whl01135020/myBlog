@@ -11,18 +11,27 @@
 <link type="text/css" rel="stylesheet" href="css/留言.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/sliders.js"></script>
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
-<!-- 返回顶部调用 begin -->
-<!--<script type="text/javascript" src="js/up/jquery.js"></script>-->
-<script type="text/javascript" src="js/up.js"></script>
-<script type="text/javascript" src="js/move2.js"></script>
-<!-- 返回顶部调用 end-->
-<!--header start-->
+<script type="text/javascript" src="js/fontslider.js"></script>
+<!--<script type="text/javascript" src="js/留言.js"></script>-->
+
+
 <header>
- <div class="logo f_l"><b><a href="/"><img src="images/e602d4cb78ca968db4ab3739c9b25c2f_top.gif" width="190px"; ></a></div>
-   <div class="top-mid"><p>MyBlog--王小丽</p></div>
+	
+  <div class="logo f_l"><b><img src="images/e602d4cb78ca968db4ab3739c9b25c2f_top.gif" width="190px"; ></a></div>
+  <div class="top">
+	<div class="top_con">
+		<!--<div class="top_con_left"><a href="#"><img src="images/logo.jpg" width="300"height="150"alt="步浪博客"title="步浪个人博客"></a></div>-->
+		<div class="top_con_right">
+			<p class="pinf">虽然我跑的很慢</p>
+			<p class="jiaz">但是我会一直不停奔跑</p>
+			<p class="bulang">----By:小丽</p>
+			
+		</div>
+	</div>
+</div>
+
+<!--<script type="text/javascript" src="ex.js/my.js"></script>-->
+  <!--<div class="top-mid"><p>MyBlog--王小丽</p></div>-->
   <nav id="topnav" class="f_r">
 <!--导航条 start-->
     <ul>
@@ -36,36 +45,6 @@
 <article>
 <div class="labout">
 <p class="about_tit"><a href="#">首页</a>&nbsp;&nbsp;<b>&gt;&gt;</b>&nbsp;&nbsp;<a href="#">给我留言Massages</a><span>给我留言</span></p>
-            <script>
-			window.onload=function(){
-				var oTxt=document.getElementById('text1');
-				var oBtn=document.getElementById('btn1');
-				var oUl=document.getElementById('ul1');
-				
-				oBtn.onclick=function(){
-					var oLi=document.createElement('li');//创建li 
-					oLi.innerHTML=oTxt.value;//li里面的值就是文本框里面的值
-					oTxt.value='';//文本框清空，方便下一次使用
-					if(oUl.children. length>0){
-						oUl.insertBefore(oLi,oUl.children[0]);//将li插到ul的第0个子节点前
-					}
-					else{
-						oUl.appendChild(oLi);//将li扔到ul里面
-					}
-					//运动
-					var iHeight=oLi.offsetHeight;//因为li的高度不确定，offsetHeight最大的好处就是自适应取出里面的东西，即高度完全是根据里面的内容有多高撑起来的
-		
-		           oLi.style.height='0';//取到高度之后将高度清零
-		           //高度变高同时透明度变大
-		           startMove(oLi, {height: iHeight}, function (){
-			       startMove(oLi, {opacity: 100});
-		          });
-
-				
-				}
-		};
-			
-            </script>
             
          <textarea id="text1" rows="5" cols="50" ></textarea>
          <input id="btn1" type="button" value="留言" >
@@ -147,12 +126,7 @@
 <!--article end-->
 
 <!--footer start-->
-<footer style="background:url(images/ex01.jpg) background-size:100% 100%;border-top: 4px solid #000;">
-  <p class="ft-copyright">王小丽博客 Design by DanceSmile 蜀ICP备11002373号-1</p>
-  <div id="tbox"><a id="gotop"  href="javascript:;"></a> </div>
-</footer>
-<!--footer end-->
- <footer style="background:url(images/ex01.jpg);background-size:100% 100%;border-top: 4px solid #666">
+ <footer style="background:url(images/m.jpg);background-size:100% 100%;border-top: 4px solid #666">
             <style type="text/css">
                 #cnzz_stat_icon_1259160276 {
                     width: 50px;
@@ -161,19 +135,19 @@
                     color:#666;
                 }
             </style>
-	<div style="height:5px">&nbsp;</div>
-   <p><a href="http://www.miitbeian.gov.cn" target="_blank">王小丽博客 Design by 王小丽</a></p>
-		<span>申明：本站部分内容来源于互联网，如有侵犯你的权益请与我联系我将尽快清除。</span><br/>
-		<span class="yi-footer-fgrey">电子邮箱：</span>
-		<a href="mailto:1711768357@qq.com">1711768357@qq.com</a> | 
-		<a href="tencent://message/?uin=1711768357&Site=&Menu=yes">点击与我进行QQ聊天</a><br/>
-            	<span>本站使用编程语言：javascript | 
+  <div style="height:5px">&nbsp;</div>
+            <p><a href="http://www.miitbeian.gov.cn" target="_blank">王小丽博客 Design by 王小丽</a></p>
+    <span>申明：本站部分内容来源于互联网，如有侵犯你的权益请与我联系我将尽快清除。</span><br/>
+    <span class="yi-footer-fgrey">电子邮箱：</span>
+    <a href="mailto:1711768357@qq.com">1711768357@qq.com</a> | 
+    <a href="tencent://message/?uin=1711768357&Site=&Menu=yes">点击与我进行QQ聊天</a><br/>
+              <span>本站使用编程语言：javascript | 
                本站使用技术：ASP.NET、Ajax、Jquery、Div+Css 等
                 </span><br/>
-		<span style="margin-left: 49%; float: left;"></span>
-		<span>&nbsp;</span>
+    <span style="margin-left: 49%; float: left;"></span>
+    <span>&nbsp;</span>
             <div style="height:5px">&nbsp;</div>
-        </footer>-->
+        </footer>
 
 </body>
 </html>

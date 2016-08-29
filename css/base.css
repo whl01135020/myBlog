@@ -25,14 +25,27 @@ a:hover { text-decoration: none; }
 .l_box { width: 670px; }
 .r_box { width: 300px; }
 /* 头部信息 */
-header { width: 1000px; height:160px;margin: 10px auto; overflow: hidden; clear: both;background:url(../images/hd4.jpg); position:relative;}
-#topnav { width: 60%; background:#0FF; height: 46px; line-height: 46px; text-align: center;margin-top:120px;left:250px; position:absolute; }
+header { width: 1000px; height:200px;margin: 10px auto; overflow: hidden; clear: both; position:relative;}
+#topnav { width:100%; background:#39c3f2; height: 46px; line-height: 46px; text-align: center;margin-top:0px;left:0px; position:absolute; }
 #topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
 #topnav a:hover { background: #fff; color: #000; }
 #topnav a { color: #FFF }
 #topnav_current { background: #F3FF41; }/* 高亮选中颜色 */
 a#topnav_current { color: #000 }
 article { width: 1000px; margin: 20px auto; }
+
+.top{width:100%;min-width:1180px;background:rgba(50,110,240,0.3);height:150px;}
+.top .top_con{width:1180px;margin:0 auto;}
+.top .top_con .top_con_left{float:left; width:330px;background:url("../images/bor.jpg")no-repeat right;}
+.top .top_con .top_con_left img{display:block;}
+.top .top_con .top_con_right{overflow:hidden;position:relative;letter-spacing:5px;float:right;width:800px;height:150px;font-family:"microsoft yahei";font-size:18px;}
+.top .top_con .top_con_right p{position:absolute;opacity:0;color:#404040;}
+.top .top_con .top_con_right p.pinf{left:0px;top:-5px;}
+.top .top_con .top_con_right p.jiaz{right:100px;top:64px;}
+.top .top_con .top_con_right p.bulang{right:300px;top:105px;color:#c91b46;}
+.top .top_con .top_con_right b{display:block;float:right;padding:0px 10px 20px;background:#fff;border-radius:3px;box-shadow:0 0 15px #ffff80;margin-right:15px;}
+.top .top_con .top_con_right img{display:block;}
+/*top end*/
 
 /*footer*/
 footer { height:100px; width: 100%; clear: both; text-align: center; }
