@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.JS{
+	
+	font-size: 12px; text-indent:1em; line-height:18px; letter-spacing:1.5px;
+	}
+.JS span{
+	
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#F00;
+	margin-left:260px;
+	}
+	.article_con p.article_two_tit{font-size:14px;line-height:25px;margin-bottom:50px;float:left;margin-right:350px;}
+ .article_con p.article_two_tit a{color:#404040;}
+ .article_con p.article_two_tit a:hover{color:#6fb5ee;}
